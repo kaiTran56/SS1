@@ -53,12 +53,12 @@
 	</servlet-mapping>
 
 	<servlet>
-		<servlet-name>WaitingServlet</servlet-name>
-		<servlet-class>com.team.controller.WaitingServlet</servlet-class>
+		<servlet-name>ProfileUser</servlet-name>
+		<servlet-class>com.team.controller.ProfileUser</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>WaitingServlet</servlet-name>
-		<url-pattern>/user/homepage</url-pattern>
+		<url-pattern>/view/user/profile</url-pattern>
 	</servlet-mapping>
 
 
