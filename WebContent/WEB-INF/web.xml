@@ -90,14 +90,6 @@
 		<url-pattern>/error/check</url-pattern>
 	</servlet-mapping>
 
-	<servlet>
-		<servlet-name>ProfileUser</servlet-name>
-		<servlet-class>com.team.controller.ProfileUser</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>ProfileUser</servlet-name>
-		<url-pattern>/user/profile</url-pattern>
-	</servlet-mapping>
 
 	<servlet>
 		<servlet-name>ErrorHandle</servlet-name>
