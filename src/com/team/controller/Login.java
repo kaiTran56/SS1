@@ -35,8 +35,7 @@ public class Login extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		request.getRequestDispatcher("/view/user/signup.jsp").forward(request, response);
 	}
 
 	/**
@@ -51,7 +50,7 @@ public class Login extends HttpServlet {
 		User user = userDao.login(username, password);
 		if (user == null) {
 			request.setAttribute("error", "Wrong password, please try again!");
-			RequestDispatcher dispatcher = request.getRequestDispatcher("/user/signup.jsp");
+			RequestDispatcher dispatcher = request.getRequestDispatcher("/view/user/signup.jsp");
 			dispatcher.forward(request, response);
 		} else {
 			HttpSession session = request.getSession();
