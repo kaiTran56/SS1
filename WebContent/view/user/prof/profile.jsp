@@ -134,7 +134,8 @@ button {
 
 
 					<div class="text-center">
-						<img src="user/profile/avata.jpg"
+						<img
+							src="${pageContext.request.contextPath }/view/user/prof/avata.jpg"
 							class="avatar img-circle img-thumbnail" alt="avatar">
 
 					</div>
@@ -229,8 +230,8 @@ button {
 
 									<div class="col-xs-6">
 										<label for="email"><h4>Location</h4></label> <input
-											type="text" class="form-control" name ="addressTemp"id="location"
-											value="${requestScope.userDetail.address}">
+											type="text" class="form-control" name="addressTemp"
+											id="location" value="${requestScope.userDetail.address}">
 									</div>
 								</div>
 
